@@ -1,0 +1,25 @@
+{
+  "name": "package",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.4",
+    "port": "^0.8.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QueenAyana/FriendFinder.git"
+  },
+  "author": "Amber Brune",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QueenAyana/FriendFinder/issues"
+  },
+  "homepage": "https://github.com/QueenAyana/FriendFinder#readme"
+}
