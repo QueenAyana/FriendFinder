@@ -1,6 +1,8 @@
 var userInfo=[
     {
         name:"",
+        age:"",
+        gender:"",
         photo:"",
         scores:[]
     }

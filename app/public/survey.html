@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Friend Finder</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 id="headr" class="text-center"><span class="fas fa-dragon"></span> Dragon Dating</h1>
+    </header>
+
+    <div class="container">
+
+        <div class="jumbotron">
+            <h2 class="text-center"><span class="fas fa-glass-martini-alt"></span> Super! Now Lets Evaluate Your
+                Qualities!<span class="fas fa-glass-martini-alt"></span></h2>
+            <hr>
+            <h2 id="answerMe" class="text-center">Answer me these Questions ten!</h2>
+            <h6 class="text-center">(We know thats not the quote, but just go with it.)</h6>
+            <hr>
+            <h6 id="info">These ten Questions will allow our Magical Algorithms to help us find you a sutible match.
+                Please answer with what comes from the heart in the range Five being the highest (mostly agree) and One
+                the lowest (mostly disagree). </h6>
+
+            <div class="text-center">
+                <a href="/survey"><button class="btn btn-lg btn-danger"><span class="fas fa-fire"></span> Take The
+                        Survey!</button></a>
+            </div>
+            <form>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label id="formLabel" for="userName">Name</label>
+                            <input type="text" class="form-control" id="userName" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label id="formLabel" for="userGender">Gender</label>
+                            <input type="text" class="form-control" id="userGender" placeholder="Gender">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="form-group">
+                            <label id="formLabel" for="userAge">Age</label>
+                            <input type="number" min="18" class="form-control" id="userGender" placeholder="Age">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4">
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">How much of a Party Animal are you?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Do you like to read fiction books?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Is "Netflix and Chill" a literal
+                                thing to you?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Are you Romantic and Chivalrous?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Do you walk barefoot in your house?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Can You Cook (5) or is the microwave
+                                your BFF (1)?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Are you a fan of Cuddling?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">First Date: Do you Split the check?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Do you snore?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                        <div class="col-auto">
+                            <label class="formLabel" for="inlineFormCustomSelect">Do you believe in Magic?</label>
+                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                                <option value="1">One</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                                <option value="4">Four</option>
+                                <option value="5">Five</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleFormControlFile1">Import a Beautiful picture of you(hopefully)!</label>
+                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <button id="subBtn" type="submit" class="btn btn-danger">Submit Yourself</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

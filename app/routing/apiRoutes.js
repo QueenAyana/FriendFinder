@@ -20,7 +20,8 @@ module.exports = function(app) {
     // ---------------------------------------------------------------------------
   
     app.post("/api/friends", function(req, res) {
-        userInfo.push(req.body);
+      console.log(req.body)
+      //userInfo.push(req.body);
     });
   
     // app.post("/api/clear", function(req, res) {
