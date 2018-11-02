@@ -20,7 +20,22 @@ module.exports = function(app) {
     // ---------------------------------------------------------------------------
   
     app.post("/api/friends", function(req, res) {
+      var newUser = req.body
+      var sum = 0
+      var score = userInfo.scores
+      
+      // for (let i = 0; i < score.length; i++) {
+        
+        
+      // }
+       
       console.log(req.body)
+      console.log(newUser)
+      // var cmparUser = 
+      // for (let index = 0; index < array.length; index++) {
+      //   const element = array[index];
+        
+      // }
       //userInfo.push(req.body);
     });
   

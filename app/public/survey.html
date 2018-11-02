@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -35,7 +36,8 @@
                 <a href="/survey"><button class="btn btn-lg btn-danger"><span class="fas fa-fire"></span> Take The
                         Survey!</button></a>
             </div>
-            <form action="/api/friends" method="POST">
+            <!-- action="/api/friends" method="POST" -->
+            <form>
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
@@ -52,7 +54,7 @@
                     <div class="col">
                         <div class="form-group">
                             <label id="formLabel" for="userAge">Age</label>
-                            <input type="number" min="18" class="form-control" id="userGender" placeholder="Age">
+                            <input type="number" min="18" class="form-control" id="userAge" placeholder="Age">
                         </div>
                     </div>
                 </div>
@@ -60,8 +62,8 @@
                     <div class="col-md-4"></div>
                     <div class="col-md-4">
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">How much of a Party Animal are you?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question1">How much of a Party Animal are you?</label>
+                            <select class="custom-select mr-sm-2" id="question1">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -70,8 +72,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Do you like to read fiction books?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question2">Do you like to read fiction books?</label>
+                            <select class="custom-select mr-sm-2" id="question2">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -80,9 +82,9 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Is "Netflix and Chill" a literal
+                            <label class="formLabel" for="question3">Is "Netflix and Chill" a literal
                                 thing to you?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <select class="custom-select mr-sm-2" id="question3">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -91,8 +93,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Are you Romantic and Chivalrous?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question4">Are you Romantic and Chivalrous?</label>
+                            <select class="custom-select mr-sm-2" id="question4">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -101,8 +103,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Do you walk barefoot in your house?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question5">Do you walk barefoot in your house?</label>
+                            <select class="custom-select mr-sm-2" id="question5">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -111,9 +113,9 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Can You Cook (5) or is the microwave
+                            <label class="formLabel" for="question6">Can You Cook (5) or is the microwave
                                 your BFF (1)?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <select class="custom-select mr-sm-2" id="question6">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -122,8 +124,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Are you a fan of Cuddling?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question7">Are you a fan of Cuddling?</label>
+                            <select class="custom-select mr-sm-2" id="question7">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -132,8 +134,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">First Date: Do you Split the check?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question8">First Date: Do you Split the check?</label>
+                            <select class="custom-select mr-sm-2" id="question8">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -142,8 +144,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Do you snore?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question9">Do you snore?</label>
+                            <select class="custom-select mr-sm-2" id="question9">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -152,8 +154,8 @@
                             </select>
                         </div>
                         <div class="col-auto">
-                            <label class="formLabel" for="inlineFormCustomSelect">Do you believe in Magic?</label>
-                            <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <label class="formLabel" for="question10">Do you believe in Magic?</label>
+                            <select class="custom-select mr-sm-2" id="question10">
                                 <option value="1">One</option>
                                 <option value="2">Two</option>
                                 <option value="3">Three</option>
@@ -167,8 +169,8 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="exampleFormControlFile1">Import a Beautiful picture of you(hopefully)!</label>
-                            <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                            <label for="FormControlFile1">Import a Beautiful picture of you(hopefully)!</label>
+                            <input type="file" class="form-control-file" id="FormControlFile1">
                         </div>
                     </div>
 
@@ -180,7 +182,7 @@
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
