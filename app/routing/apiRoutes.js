@@ -22,28 +22,11 @@ module.exports = function(app) {
     app.post("/api/friends", function(req, res) {
       var newUser = req.body
       var sum = 0
+      var difference
       var score = userInfo.scores
-      
-      // for (let i = 0; i < score.length; i++) {
-        
-        
-      // }
-       
+      // need to make the for loop to compare the users survey scores and push them into the difference variable
+      //so as to add them up and push that to the sum variable so as to locate the best match in the database for the new user
       console.log(req.body)
       console.log(newUser)
-      // var cmparUser = 
-      // for (let index = 0; index < array.length; index++) {
-      //   const element = array[index];
-        
-      // }
-      //userInfo.push(req.body);
     });
-  
-    // app.post("/api/clear", function(req, res) {
-       // Empty out the arrays of data
-    //   tableData.length = [];
-    //   waitListData.length = [];
-  
-    //   res.json({ ok: true });
-    // });
   };
